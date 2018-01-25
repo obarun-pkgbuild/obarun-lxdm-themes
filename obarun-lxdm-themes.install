@@ -1,0 +1,10 @@
+post_install() {
+  echo "==> Don't forget to manually edit /etc/lxdm/lxdm.conf and set the theme"
+  echo "    to theme=Obarun"
+  echo "    To be diplayed properly, you need to set the variable bg to"
+  echo "    bg=/usr/share/wallpapers/Obarun/background-dm.jpg"
+}
+
+post_upgrade() {
+  post_install
+}
